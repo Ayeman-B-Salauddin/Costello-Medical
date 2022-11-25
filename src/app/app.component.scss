@@ -1,0 +1,284 @@
+// $color: #111;
+// $primary: #FFAB9D;
+
+// html,
+// body {
+//   padding: 0;
+//   margin: 1.5em;
+//   font-family: sans-serif;
+// }
+
+// a {
+//   text-decoration: none;
+//   font-size: 1.3rem;
+// }
+
+// .hero-img {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   background: url('../assets/breakout.jpg');
+//   background-size: cover;
+//   background-position-x: 20%;
+//   background-position-y: 20%;
+//   width: 100%;
+//   height: 100vh;
+//   z-index: -1;
+//   animation: introLoad 2s forwards;
+// }
+
+// // .logo {
+// //   color: white;
+// //   font-weight: bold;
+// // }
+
+// .navbar {
+//   position: fixed;
+//   right: 0;
+//   top: 0;
+//   background: white;
+//   height: 100vh;
+//   width: 50%;
+//   z-index: 999;
+//   text-transform: uppercase;
+//   transform: translateX(100%);
+//   transition: transform .5s ease-in-out;
+
+//   ul {
+//     list-style-type: none;
+//     padding: 0;
+//     margin-top: 8em;
+
+//     a {
+//       color: black;
+//       padding: .75em 2em;
+//       display: block;
+
+//       &:hover {
+//         background: rgb(235,235,235);
+//       }
+//     }
+//   }
+
+//   .close {
+//     float: right;
+//     margin: 2em;
+//     width: 2.5em;
+//   }
+// }
+
+// header {
+//   display: flex;
+//   justify-content: space-between;
+//   svg {
+//     width: 2.3em;
+//     margin-top: -.6em;
+//     cursor: pointer;
+//   }
+// }
+
+// h1{
+//   font-size: 3rem;
+//   margin-top: 2em;
+//   line-height: 3.3rem;
+// }
+
+// .hero {
+//   color: white;
+//   height: 90vh;
+//   animation: moveDown 1s ease-in-out forwards;
+//   opacity: 0;
+
+//   .down-arrow {
+//       stroke: white;
+//       position: absolute;
+//       bottom: 8em;
+//       width: 1em;
+//       animation: moveArrow 1s alternate-reverse infinite;
+
+//       path {
+//           fill: white;
+//       }
+//   }
+// }
+
+// .open-nav {
+//   transform: translateX(0%);
+// }
+
+// .logo {
+//   text-decoration: none;
+//   font-weight: bold;
+//   color: rgb(255, 255, 255);
+// //   span {
+// //     color: red;
+// // }
+// }
+
+// // Media queries and Key frames
+
+
+// @media only screen and (min-width: 680px) {
+
+//   body {
+//       margin: 1.5em 5em;
+//       font-family: 'Poppins', sans-serif;
+//   }
+
+// }
+
+// @media only screen and (min-width: 920px) {
+
+//   .menu {
+//       display: none;
+//   }
+
+//   .navbar {
+//       transform: translateX(0);
+//       position: unset;
+//       display: block;
+//       width: auto;
+//       height: auto;
+//       background: none;
+
+//       svg.close {
+//           display: none;
+//       }
+
+//       ul {
+//           display: flex;
+//           margin: 0;
+
+//           a {
+//               color: rgb(255, 255, 255);
+//               background-color: rgba(0, 0, 0, 0.322);
+//               border-radius: 5%;
+//               padding: .5em 1.5em;
+//               font-size: .9rem;
+//               margin-left: 0.2em;
+//               &:hover {
+//                   background: rgb(255, 111, 111);
+//                   text-decoration: underline;
+//               }
+//           }
+//       }
+//   }
+
+//   .hero-img {
+//       left: unset;
+//       right: 0;
+//       width: 50%;
+//       height: 100vh;
+//   }
+
+//   .logo {
+//       color: black;
+//       span {
+//           color: rgb(255, 0, 0);
+//       }
+//   }
+
+//   section.hero {
+//       color: black;
+//       height: auto;
+//       width: 50%;
+//       margin-bottom: 8em;
+//       margin-top: 10em;
+//       .subhead {
+//           margin-bottom: 3em;
+//       }
+
+//       svg.down-arrow {
+//           stroke: black;
+//           position: unset;
+
+//           path {
+//               fill: black;
+//           }
+//       }
+//   }
+
+// }
+
+
+// @media only screen and (min-width: 1200px) {
+//   .wrapper {
+//       width: 1200px;
+//       margin: 0 auto;
+//   }
+
+// }
+
+// @keyframes introLoad {
+//   from {
+//       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+//   }
+//   to {
+//       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+//   }
+// }
+
+// @keyframes moveArrow {
+//   from {
+//       transform: translateY(-30px)
+//   }
+//   to {
+//       transform: translateY(0)
+//   }
+// }
+// @keyframes moveDown {
+//   from {
+//       transform: translateY(-100px)
+//   }
+//   to {
+//       transform: translateY(0);
+//       opacity: 1;
+//   }
+// }
+
+
+// .cta {
+//   text-decoration: none;
+//   color: inherit;
+//   position: relative;
+//   margin: auto;
+//   padding: 19px 22px;
+//   transition: all .2s ease;
+//   &:before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     display: block;
+//     border-radius: 28px;
+//     background: rgba($primary,.5);
+//     width: 56px;
+//     height: 56px;
+//     transition: all .3s ease}
+//   span{
+//     position: relative;
+//     font-size: 0.8em;
+//     line-height: 18px;
+//     font-weight: 900;
+//     letter-spacing: .25em;
+//     text-transform: uppercase;
+//     vertical-align: middle;}
+//   svg{
+//     position: relative;
+//     top: 0;
+//     margin-left: 10px;
+//     fill: none;
+//     stroke-linecap: round;
+//     stroke-linejoin: round;
+//     stroke: $color;
+//     stroke-width: 2;
+//     transform: translateX(-5px);
+//     transition: all .3s ease;}
+//   &:hover{
+//     &:before{
+//       width: 100%;
+//       background: rgba($primary,1)};
+//     svg{
+//       transform: translateX(0)}}
+//   &:active{
+//     transform: scale(.96)}}
